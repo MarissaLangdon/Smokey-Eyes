@@ -1,0 +1,209 @@
+* {
+	box-sizing: border-box;
+}
+
+body,html{
+	height: 100%;
+	background: url(../img/shadb.jpg) no-repeat;
+	background-size: cover;
+	height: 110%;
+	background-position: center;
+	transform: translateX(-20);
+}
+
+nav{
+  position: absolute;
+  right: 1%;
+  top: 7%;
+  z-index: 2;
+}
+
+nav .fa {
+  padding: 2% .5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+nav a{
+  color: white;
+}
+
+/***********************************************/
+/******************* header *******************/
+/***********************************************/
+/***********************************************/
+header{
+	color: white;
+	font-family: "Playfair Display SC";
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	background:linear-gradient(to right, rgba(94,47,150,1), rgba(94,47,150,0));
+	/*background-color: rgba(255,255,255,.5);*/
+	padding: 1rem 5%;
+	z-index: 1;
+	height: 15%;
+	margin:0;
+}
+
+header a{
+	color: white;
+}
+@media screen and (max-width: 37.5rem){
+	header{
+		height:11%;
+	}
+}
+
+header img{
+	height: 100%;
+	color: white;
+}
+
+
+@media screen and (max-width: 37.5rem){
+	header{
+		font-family: "Playfair Display SC";
+		/*height: 10%;*/
+
+	}
+}
+
+
+/***********************************************/
+/******************* main *******************/
+/***********************************************/
+/***********************************************/
+main{
+	font-family: "Playfair Display SC";
+	position: relative;
+	top: 20%;
+	height: 10%;
+	transform: translateY(-50%);
+	color: white;
+}
+main a{
+	text-decoration: none; 
+	color: white;
+}
+main img{
+	width: 100%;
+}
+main p{
+	font-family: "Libre Franklin";
+}
+main li{
+	display: block;
+}
+main a:hover h3{
+	background:linear-gradient(to right, rgba(94,47,150,0), rgba(94,47,150,1), rgba(94,47,150,0));
+	color: white;
+}
+
+.customlist {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+/*.customlist h3{
+	float: right;
+	right: 10%;
+	line-height: .5rem;
+	font-size: .7rem;
+}
+.customlist p{
+	font-size: .8rem;
+	text-align: right;
+	padding-bottom: 3rem;
+}*/
+
+.clearfix{
+	clear: both;
+}
+
+.customlist li{
+	counter-increment: step-counter;
+	position: relative;
+}
+
+.customlist li:before {
+	content: counter(step-counter);
+	font-size: 3rem;
+	position: absolute;
+	left: 20%;
+}
+	
+@media screen and (min-width: 37.5rem){
+	.customlist li:before {
+		position: absolute;
+		left: 10%;
+		bottom: 45%;
+		font-size: 3rem;
+	}
+	main{
+		top: 40%;
+	}
+	main li{
+		float: left;
+		width: 33.3333%;
+		text-align: center;
+		font-size: 1.2rem;
+	}
+}
+@media screen and (min-width: 70rem){
+	.customlist li:before {
+		position: absolute;
+		left: 10%;
+		bottom: 35%;
+		font-size: 5rem;
+	}
+	main{
+		top: 25%;
+	}
+	main li{
+		float: left;
+		width: 33.3333%;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+}
+
+
+/***********************************************/
+/******************* footer *******************/
+/***********************************************/
+/***********************************************/
+footer{
+	font-family: "Libre Franklin";
+		position: fixed; 
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		background:linear-gradient(to right, rgba(94,47,150,0), rgba(94,47,150,1));
+		padding: .5rem 5%;
+		color: #5e2f96;
+		text-decoration: none;
+}
+
+footer a{
+	color: white;
+	line-height: 2rem;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+footer p{
+	color: white;
+	line-height: 2rem;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+footer h2{
+	font-family: "Libre Franklin";
+	font-size: 1rem;
+	text-align: right;
+	line-height: 2rem;
+	padding: 0;
+	margin: 0;
+}

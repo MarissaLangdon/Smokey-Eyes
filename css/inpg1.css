@@ -1,0 +1,233 @@
+/***********************************************/
+/******************* body *******************/
+/***********************************************/
+/***********************************************/
+* {
+	box-sizing: border-box;
+}
+
+nav{
+  color: rgba(94,47,150,1);
+  position: absolute;
+  right: 1%;
+  top: 7%;
+  z-index: 2;
+}
+
+nav .fa {
+  padding: 2% .5rem;
+  font-size: 1.5rem;
+  color: #5e2f96;
+}
+nav a{
+  color: rgba(94,47,150,1);
+}
+
+body {
+	font-family:'Playfair Display SC';
+	margin: 0;
+  padding: 0;
+	
+}
+header{
+  color: white;
+  font-family: "Playfair Display SC";
+  background:linear-gradient(to right, rgba(94,47,150,1), rgba(94,47,150,0));
+  padding: 1rem 5%;
+  z-index: 1;
+  height: 12%;
+  margin:0;
+}
+.logo{
+  width: 12rem;
+}
+
+header a{
+  color: white;
+}
+@media screen and (max-width: 37.5rem){
+  header{
+    height:11%;
+  }
+}
+
+header img{
+  height: 100%;
+  color: white;
+}
+
+
+@media screen and (max-width: 37.5rem){
+  header{
+    font-family: "Playfair Display SC"; 
+  }
+
+  nav .fa{
+      padding: .2rem;
+    }
+
+}
+
+h1{
+  padding: 10px 50px 0;
+  color: #5e2f96;
+  z-index: 
+}
+main{
+  background-color: white;
+}
+
+main p{
+  font-family: 'Libre Franklin';
+  padding: 0 0 0 50px;
+  text-align: justify;
+  width: 60%;
+}
+
+@media screen and (max-width: 37.5rem){
+ 
+  main p{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px;
+  } 
+}
+
+.pub{
+  color: gray;
+}
+h2{
+  margin: 0;
+  padding:0;
+  color: #5e2f96;
+}
+
+.col1{
+  padding: 0 0 0 50px;
+  background:linear-gradient(to right, rgba(94,47,150,1), rgba(94,47,150,.3), rgba(94,47,150,1), rgba(94,47,150,.3),rgba(94,47,150,1));
+  color: white;
+}
+  .col1 li{
+    font-family: 'Libre Franklin';
+    padding: 0px 60px 10px 0;
+    display: inline-block;
+  }
+    .col1 i{
+      padding: 2px ;
+    }
+      .col1 h2{
+        color: white;
+}
+@media screen and (max-width: 85rem){
+  .col1 li{
+    display: block;
+  }
+}  
+
+.col2{
+  padding: 0 0 0 50px;
+}
+.steps {
+  overflow: hidden;
+  background-color: #e6def8;
+  padding: 0 150px 50px 40px;
+}
+
+  .steps li{
+    font-family: 'Libre Franklin';
+    padding: 15px 0;
+  }
+    .steps img{
+      margin: 0 auto;
+      width: 50%;
+      
+    }
+@media screen and (max-width: 37.5rem){
+  .steps{
+    padding: 0;
+
+  }
+  .steps ol{
+    margin-right: 50px; 
+  }
+  .steps img{
+    width: 100%;
+    padding: 0; 
+  }
+}
+.products {
+  overflow: hidden;
+  background-color: white;
+  padding: 0 50px 50px 50px;
+}
+
+  .products ul { 
+    margin: 0;
+    padding: 15px 30px;
+    list-style-type:none;
+
+  }
+
+    .products ul a{
+      width: 10px;
+    }
+
+      .products img{
+        width: 200px;
+        padding: 0 5px;
+      }
+        .products li p{
+          width: 90%;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+
+footer{
+  font-family: "Libre Franklin";
+    position: fixed; 
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background:linear-gradient(to right, rgba(94,47,150,0), rgba(94,47,150,1));
+    padding: .5rem 5%;
+    color: white;
+    text-decoration: none;
+}
+
+footer a{
+  color: white;
+  line-height: 2rem;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+footer p{
+  color: white;
+  line-height: 2rem;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+footer h2{
+  font-family: "Libre Franklin";
+  font-size: 1rem;
+  text-align: right;
+  line-height: 2rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+@media screen and (min-width: 37.5rem){
+  
+  .products li {
+    width: 16.667%; 
+    float: left;
+
+  }
+
+}
+
+
